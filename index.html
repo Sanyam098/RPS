@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="RPS.css">
+</head>
+<body class="body">
+    <div class="upheading " id="hed">
+        <div > 
+            <p class="heading" onclick="reloadrps()">ROCK</p>
+            <p  class="heading"onclick="reloadrps()">PAPER</p> 
+            <p  class="heading"onclick="reloadrps()">SCISSORS</p>
+        </div>
+
+      <div class="comScore">YOUR <br>SCORE<br><span class="zero" id="score">0</span></div>
+      <div class="userScore">COMPUTER<br>SCORE<br><span class="zero" id="cscore">0</span></div>
+    </div>
+    <div class="fullgame" id="full">
+    <div class="info" id="infoo">
+        <p class="picked" id="pick_ed"> YOU PICKED</p>
+        <p class="computer" id="com_ed">COMPUTER PICKED</p> 
+</div class = " plas">
+
+    
+    <div id="line1" class="lines" ></div>  
+    <div id="line3" class="lines" ></div>
+    
+    <div id="line2"  class="lines"></div>
+    <div>
+    
+    <div class="upRock seloption" id="re" onclick="Displaymodel()">
+         <div class="rcslayer ">
+        <img src="./images/icons8-fist-67 1.png" alt="" id="rock">
+        </div>
+    </div>
+        <div class="uppaper seloption" id="r2" onclick="Displaymodel()">
+            <div class="pselayer">
+            <img src="./images/icons8-hand-64 1.png" alt="" id="paper" >
+            </div>
+        </div>
+            <div class="upsilayer seloption" id="r3" onclick="Displaymodel()">
+                <div class="siselayer">
+                <img src="./images/17911 1.png" alt="" id="siccsor">
+                </div>
+                
+        
+
+                
+ </div>
+</div>
+ <div class="hov"></div>
+
+ <div class="winmodel"> <h1 class="winner">YOU WIN<br><span class="again"> AGAINST PC</span></h1>
+       <button id="playAgain" class="playagain">PLAY AGAIN</button>
+
+
+</div>
+
+    
+   </div>
+   
+   <div class="cross"   onclick="cross()" id="cross" ></div>
+   <div class="redcro"  onclick="cross()"   id="whitecross" ></div>
+   <div class="grules" id="ggrules">
+    
+    <h3 id="grules">Game Rules</h3>  
+         <ul type="square" class="listrules" >
+            <li >Rock beats scissors, scissors beat paper, and paper beats rock.</li><br>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li><br>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li><br>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li><br>
+         </ul>    
+
+</div>
+<div class="vic" id="vix">
+     <div class="victory" id="victory"> </div>
+     <div class="trophy" id="tro"> </div>
+     <div class="hurry" id="hur">
+        <h1>HURRAY!!</h1>
+        <h2>YOU WON THE GAME</h2>
+      <div class="pl"><button id="playo" class="playo">PlayAgain</button></div>  
+    </div>
+</div>
+<div class="btn_adj">
+   <div class="rulebtn"><button style="font-size: 13px;" id="rulel" class="rules" onclick="showRules()">RULES</button></div>
+   <div class="nextjs"><button class="next" id="nextl" onclick="nextpage()">NEXT</button></div>
+</div>
+    <script src="RPS.js"></script>
+</body>
+</html>
